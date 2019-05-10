@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: EncurtadorURL
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: arodrigues32
+Implementation-Vendor-Id: br.com.bemobi
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/EncurtadorURL
+Created-By: Maven Integration for Eclipse
+
