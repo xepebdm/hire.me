@@ -6,16 +6,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
-@Entity
+@Entity(name = "URL")
 public class Url {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String alias;
-	
+
 	@NotBlank
-	private String url;
+	private String alias;
+
+	@NotBlank
+	private String urlShort;
+
+	@NotBlank
+	private String urlFull;
+
 	private String tempo;
 
 	public Long getId() {
@@ -34,12 +40,20 @@ public class Url {
 		this.alias = alias;
 	}
 
-	public String getUrl() {
-		return url;
+	public String getUrlShort() {
+		return urlShort;
 	}
 
-	public void setUrl(String url) {
-		this.url = url;
+	public void setUrlShort(String urlShort) {
+		this.urlShort = urlShort;
+	}
+
+	public String getUrlFull() {
+		return urlFull;
+	}
+
+	public void setUrlFull(String urlFull) {
+		this.urlFull = urlFull;
 	}
 
 	public String getTempo() {
