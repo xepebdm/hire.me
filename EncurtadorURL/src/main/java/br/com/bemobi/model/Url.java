@@ -22,7 +22,7 @@ public class Url {
 	@NotBlank
 	private String urlFull;
 
-	private String tempo;
+	private long tempo;
 
 	public Long getId() {
 		return id;
@@ -56,11 +56,11 @@ public class Url {
 		this.urlFull = urlFull;
 	}
 
-	public String getTempo() {
+	public long getTempo() {
 		return tempo;
 	}
 
-	public void setTempo(String tempo) {
+	public void setTempo(long tempo) {
 		this.tempo = tempo;
 	}
 }
